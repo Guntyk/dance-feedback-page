@@ -18,6 +18,10 @@
   border: var(--border);
 }
 
+.select {
+  color: inherit;
+}
+
 .form-btn {
   color: #fff;
   font-size: 1em;
@@ -31,4 +35,23 @@
 
 .form-btn:hover {
   letter-spacing: 0.5em;
+}
+
+@media (max-width: 840px) {
+  .form {
+    width: 90%;
+  }
+}
+@media (max-width: 540px) {
+  .form {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .form-input {
+    width: 93%;
+  }
+  .select {
+    width: 101%;
+  }
 }

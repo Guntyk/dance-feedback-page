@@ -50,7 +50,7 @@ export default function Form() {
               name="town"
               placeholder="Місто"
             />
-            <select className="form-input" required name="role">
+            <select className="form-input select" required name="role">
               <option disabled default value="Роль">
                 Роль
               </option>
