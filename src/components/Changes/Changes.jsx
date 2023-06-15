@@ -7,7 +7,12 @@ export default function List() {
     <section>
       <ol className="changes">
         {markers.map((marker) => (
-          <Mark id={marker.id} title={marker.title} text={marker.text} />
+          <Mark
+            id={marker.id}
+            title={marker.title}
+            text={marker.text}
+            key={marker.id}
+          />
         ))}
       </ol>
     </section>

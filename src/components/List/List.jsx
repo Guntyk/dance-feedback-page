@@ -1,8 +1,10 @@
+import { usePeopleContext } from "../../context";
 import Person from "./Person/Person";
-import { people } from "../../data";
 import "./List.css";
 
 export default function List() {
+  const { people } = usePeopleContext();
+  console.log(people);
   return (
     <section className="support">
       <div className="support-header">
@@ -14,14 +16,17 @@ export default function List() {
       </div>
       <hr className="line support-line" />
       <ul className="support-list">
-        {people.map((person) => (
-          <Person
-            name={person.name}
-            surname={person.surname}
-            town={person.town}
-            role={person.role}
-          />
-        ))}
+        {people.length !== 0
+          ? people.map((person) => (
+              <Person
+                name={person.attributes.name}
+                surname={person.attributes.surname}
+                town={person.attributes.town}
+                role={person.attributes.role}
+                key={person.id}
+              />
+            ))
+          : "Завантаження..."}
       </ul>
     </section>
   );

@@ -129,7 +129,9 @@ ul {
   list-style: none;
 }
 button,
+select,
 input {
+  font-family: inherit;
   background: none;
   border: none;
   outline: none;
