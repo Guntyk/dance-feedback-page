@@ -1,0 +1,15 @@
+.paragraph {
+  margin-top: 2em;
+}
+
+.title {
+  margin: 0.8em 0;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.text {
+  font-size: 1em;
+  line-height: 1.4;
+}
