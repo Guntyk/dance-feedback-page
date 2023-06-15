@@ -8,8 +8,40 @@
   align-items: center;
 }
 
+.support-buttons {
+  position: relative;
+  border-radius: 1em;
+  border: var(--border);
+}
+
+.support-button {
+  position: relative;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  transition: 0.4s;
+}
+
+.support-button.active {
+  color: #fff;
+}
+
+.marker {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 2.78em;
+  background: var(--blue);
+  transition: 0.4s;
+  border-radius: inherit;
+}
+
 .support-line {
   margin-bottom: 1.5em;
+}
+
+.support-number {
+  display: block;
+  padding-bottom: 1em;
 }
 
 .support-list {
