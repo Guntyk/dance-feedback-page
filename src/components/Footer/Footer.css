@@ -31,3 +31,8 @@
 .ref:hover::before {
   width: 100%;
 }
+
+.mini {
+  color: var(--light-gray);
+  font-size: 0.85em;
+}

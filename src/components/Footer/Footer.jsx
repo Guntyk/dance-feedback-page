@@ -12,7 +12,7 @@ export default function Footer() {
             rel="noreferrer"
             className="ref"
           >
-            Created by Sate
+            <span className="mini">Зроблено за підтримкою</span> Sate
           </a>
         </div>
       </div>
