@@ -7,20 +7,24 @@ export default function Form() {
   const { createPerson } = usePeopleContext();
   function handleSubmit(e) {
     e.preventDefault();
-    const person = {
-      data: {
-        name: e.target.name.value,
-        surname: e.target.surname.value,
-        town: e.target.town.value,
-        role: e.target.role.value,
-      },
-    };
-    createPerson(JSON.stringify(person));
-    setFilled(true);
-    e.target.name.value = "";
-    e.target.surname.value = "";
-    e.target.town.value = "";
-    e.target.role.value = "Роль";
+    if (e.target.role.value !== "Роль") {
+      const person = {
+        data: {
+          name: e.target.name.value,
+          surname: e.target.surname.value,
+          town: e.target.town.value,
+          role: e.target.role.value,
+        },
+      };
+      createPerson(JSON.stringify(person));
+      setFilled(true);
+      e.target.name.value = "";
+      e.target.surname.value = "";
+      e.target.town.value = "";
+      e.target.role.value = "Роль";
+    } else {
+      alert('Заповніть поле "Роль"');
+    }
   }
   return (
     <section className="support-form">
@@ -50,8 +54,13 @@ export default function Form() {
               name="town"
               placeholder="Місто"
             />
-            <select className="form-input select" required name="role">
-              <option disabled default value="Роль">
+            <select
+              className="form-input select"
+              required
+              name="role"
+              defaultValue="Роль"
+            >
+              <option disabled value="Роль">
                 Роль
               </option>
               <option value="Танцюрист">Танцюрист</option>
@@ -59,6 +68,7 @@ export default function Form() {
               <option value="Суддя">Суддя</option>
               <option value="Батько">Батько</option>
               <option value="Мати">Мати</option>
+              <option value="Інше">Інше</option>
             </select>
             <button type="submit" className="form-btn" id="form-btn">
               Підтримати
@@ -66,7 +76,7 @@ export default function Form() {
           </form>
         </>
       ) : (
-        <h2 className="title">Дякуємо за підтримку!</h2>
+        <h2 className="title thanks">Дякуємо за підтримку!</h2>
       )}
     </section>
   );

@@ -9,8 +9,11 @@ export default function List() {
       <div className="support-header">
         <h2 className="title">Хто нас вже підтримав</h2>
         <div className="support-buttons">
-          <button className="support-button">1</button>
-          <button className="support-button">2</button>
+          <button className="support-button">Танцюристи</button>
+          <button className="support-button">Тренери</button>
+          <button className="support-button">Судді</button>
+          <button className="support-button">Батьки</button>
+          <button className="support-button">Інші</button>
         </div>
       </div>
       <hr className="line support-line" />

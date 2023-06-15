@@ -18,6 +18,13 @@
   border: var(--border);
 }
 
+.form-input:nth-child(1) {
+  border-top-left-radius: 1em;
+}
+.form-input:nth-child(2) {
+  border-top-right-radius: 1em;
+}
+
 .select {
   color: inherit;
 }
@@ -29,12 +36,18 @@
   letter-spacing: 0.3em;
   grid-area: 3 / 1 / 4 / 3;
   background: var(--blue);
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .form-btn:hover {
   letter-spacing: 0.5em;
+}
+
+.thanks {
+  text-align: center;
 }
 
 @media (max-width: 840px) {
