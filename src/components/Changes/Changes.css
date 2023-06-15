@@ -9,7 +9,7 @@
 
 .changes-mark {
   padding: 1em;
-  border: 1px solid rgb(229, 229, 229);
+  border: var(--border);
 }
 
 .mark-title {
@@ -24,7 +24,7 @@
   font-weight: 600;
 }
 .mark-title .number {
-  color: rgb(0, 150, 255);
+  color: var(--blue);
   font-size: 0.9em;
 }
 
