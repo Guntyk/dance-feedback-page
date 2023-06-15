@@ -10,9 +10,9 @@ export default function Form() {
     if (e.target.role.value !== "Роль") {
       const person = {
         data: {
-          name: e.target.name.value,
-          surname: e.target.surname.value,
-          town: e.target.town.value,
+          name: e.target.name.value.trim(),
+          surname: e.target.surname.value.trim(),
+          town: e.target.town.value.trim(),
           role: e.target.role.value,
         },
       };
