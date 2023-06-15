@@ -3,7 +3,7 @@ import "./Hero.css";
 export default function Hero() {
   return (
     <section className="paragraph">
-      <h1 className="title">Шановна танцювальна громадо України!</h1>
+      <h2 className="title">Шановна танцювальна громадо України!</h2>
       <p className="text">
         За останні декілька десятків років ми пройшли величезний шлях від країни
         з початковим рівнем розвитку бальних танців до одного зі світових або,
