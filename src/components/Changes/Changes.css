@@ -30,11 +30,6 @@
   font-size: 0.9em;
 }
 
-.mark-line {
-  height: 1px;
-  background: rgba(0, 0, 0, 0.1);
-}
-
 .mark-text {
   font-size: 0.8em;
   line-height: 1.3;

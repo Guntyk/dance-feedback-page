@@ -5,7 +5,7 @@ export default function Mark({ id, title, text }) {
         <span className="text">{title}</span>
         <span className="number">0{id}</span>
       </span>
-      <hr className="mark-line" />
+      <hr className="line" />
       <p className="mark-text">{text}</p>
     </li>
   );

@@ -1,4 +1,30 @@
+.support {
+  margin-bottom: 100px;
+}
+
+.support-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.support-line {
+  margin-bottom: 1.5em;
+}
+
 .support-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 840px) {
+  .support-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  .support-list {
+    font-size: 0.8em;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -154,6 +154,11 @@ code {
   width: 80%;
 }
 
+.line {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 840px) {
   body {
     font-size: 1rem;
