@@ -17,7 +17,6 @@ export function usePeople() {
   const createPerson = (personObj) => {
     putPerson(personObj).then(([createError, createdPerson]) => {
       if (createdPerson) {
-        console.log(createdPerson);
         setPeople((prevPeople) => [...prevPeople, createdPerson.data]);
       } else {
         console.log(createError);

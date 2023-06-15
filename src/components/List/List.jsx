@@ -4,7 +4,6 @@ import "./List.css";
 
 export default function List() {
   const { people } = usePeopleContext();
-  console.log(people);
   return (
     <section className="support">
       <div className="support-header">
