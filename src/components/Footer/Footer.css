@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  height: 3em;
+  border-top: var(--border);
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.ref {
+  position: relative;
+  color: unset;
+  text-decoration: none;
+}
+.ref::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  width: 0;
+  text-align: center;
+  height: 1px;
+  background: var(--black);
+  transform: translateX(-50%);
+  transition: 0.2s;
+}
+.ref:hover::before {
+  width: 100%;
+}

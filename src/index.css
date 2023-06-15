@@ -139,6 +139,7 @@ input {
 
 :root {
   --border: 1px solid rgb(229, 229, 229);
+  --black: rgb(50, 50, 50);
   --gray: rgba(0, 0, 0, 0.7);
   --light-gray: rgba(0, 0, 0, 0.4);
   --blue: rgb(0, 132, 255);
@@ -154,6 +155,7 @@ body {
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
   font-size: 1.3rem;
+  color: var(--black);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
